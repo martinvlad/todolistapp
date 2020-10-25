@@ -30,9 +30,11 @@ function App() {
   return (
     <div>
       <header>
-  <h1>Martins Todo List</h1>
+    <h1>Martin's Todo List</h1>
+      </header>
+
       
-    </header>
+    <h2 style={{textAlign: "center"}}>Enter some todos below!</h2>
     <Form setInputText={setInputText} todos={todos} setTodos={setTodos} inputText={inputText} status={status} setStatus={setStatus}/>
     <TodoList todos={todos} setTodos={setTodos} filteredTodos={filteredTodos} />
     </div>

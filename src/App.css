@@ -41,6 +41,7 @@ form button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .todo-list {
@@ -94,6 +95,7 @@ form button:hover {
 .completed {
   text-decoration: line-through;
   opacity: 0.5;
+  color: red;
 }
 
 /*CUSTOM SELECTOR */
@@ -131,9 +133,4 @@ select {
   cursor: pointer;
   pointer-events: none;
 }
-/* Transition */
-/*
-.select:hover::after {
-  transform: scale(1.5);
-}
-*/
+
