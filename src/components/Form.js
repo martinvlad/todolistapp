@@ -19,8 +19,8 @@ setStatus(e.target.value)
     return (
         
            <form onSubmit={handleSubmit}>
-      <input value={inputText}type="text" className="todo-input"onChange={inputTextHandler} />
-      <button className="todo-button" type="submit"  >
+      <input style={{borderRadius: "30px"}} value={inputText}type="text" className="todo-input"onChange={inputTextHandler} />
+      <button  className="todo-button" type="submit"  >
         <i className="fas fa-plus-square"></i>
       </button>
       <div className="select">

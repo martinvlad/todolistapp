@@ -85,17 +85,26 @@ form button:hover {
 .fa-trash,
 .fa-check {
   pointer-events: none;
+
 }
+
+
+
 
 .fall {
   transform: translateY(10rem) rotateZ(20deg);
   opacity: 0;
 }
-
+.un-completed{
+  text-decoration: none;
+  transition: all 0.5s linear;
+}
 .completed {
   text-decoration: line-through;
-  opacity: 0.5;
-  color: red;
+  opacity: 1;
+  color: rgb(151, 3, 3);
+  transition: all 0.5s linear;
+  
 }
 
 /*CUSTOM SELECTOR */
@@ -115,6 +124,7 @@ select {
   margin: 1rem;
   position: relative;
   overflow: hidden;
+  
 }
 select {
   color: #ff6f47;
@@ -122,7 +132,19 @@ select {
   cursor: pointer;
   width: 12rem;
 }
+.select:hover .filter-todo{
+  display: block;
+}
+.filter-todo option{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
 /* Arrow */
+
+
 .select::after {
   content: "\25BC";
   position: absolute;
